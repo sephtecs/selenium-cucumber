@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="2" time="10.427">
+    <testcase classname="to test google search functionality" name="check if the google search feature functions correctly" time="7.815">
+        <system-out><![CDATA[Given new browser is open...................................................passed
+And user is on home page....................................................passed
+When user enters a text search page.........................................passed
+And user clicks on the search button........................................passed
+Then user is navigated to the search results................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="feature to test login functionality" name="check login is successful with valid credentials" time="2.48">
+        <failure message="no such window: target window already closed&#10;from unknown error: web view not found&#10;  (Session info: chrome=99.0.4844.51)&#10;Build info: version: '4.1.2', revision: '9a5a329c5a'&#10;System info: host: 'Josephs-MacBook-Pro.local', ip: '2600:6c50:27f:99c1:0:0:0:c4a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '17.0.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [ee43e1fd3ea9731863f0644eac03dc60, findElement {using=id, value=user-name}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/pp/xlcq9k5x5kz...}, goog:chromeOptions: {debuggerAddress: localhost:54996}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54996/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: ee43e1fd3ea9731863f0644eac03dc60" type="org.openqa.selenium.NoSuchWindowException"><![CDATA[Given browswer is open......................................................passed
+And user is on login page...................................................failed
+When user enters username and password......................................skipped
+And user clicks on login button.............................................skipped
+Then user is be navigated to the home page..................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
+from unknown error: web view not found
+  (Session info: chrome=99.0.4844.51)
+Build info: version: '4.1.2', revision: '9a5a329c5a'
+System info: host: 'Josephs-MacBook-Pro.local', ip: '2600:6c50:27f:99c1:0:0:0:c4a%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '11.5', java.version: '17.0.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [ee43e1fd3ea9731863f0644eac03dc60, findElement {using=id, value=user-name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 99.0.4844.51, chrome: {chromedriverVersion: 99.0.4844.51 (d537ec02474b5..., userDataDir: /var/folders/pp/xlcq9k5x5kz...}, goog:chromeOptions: {debuggerAddress: localhost:54996}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), se:cdp: ws://localhost:54996/devtoo..., se:cdpVersion: 99.0.4844.51, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: ee43e1fd3ea9731863f0644eac03dc60
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:184)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:167)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:142)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:558)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:382)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:374)
+	at com.selenium_cucumber_runner.LoginTest.user_is_on_login_page(LoginTest.java:37)
+	at ✽.user is on login page(file:///Users/sephtecs/Documents/selenium-cucumber-runner/src/test/resources/Features/login.feature:5)
+]]></failure>
+    </testcase>
+</testsuite>
