@@ -11,5 +11,5 @@ Feature: feature to test login functionality of testproject
       | username  | password |
       | 'Tufail'  | '12345'  |
       | 'Daniel'  | '12345'  |
-      | 'Richard' | '1234'  |
-      | 'Neena'   | '45543'  |
+      | 'Richard' | '12345'  |
+      | 'Neena'   | '12345'  |
